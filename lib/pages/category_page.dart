@@ -76,7 +76,7 @@ class CategoryPage extends StatelessWidget {
                               borderRadius: BorderRadius.all(Radius.circular(12)),
                               color: Colors.white,
                             ),
-                            child: Image.network(
+                            child: Image.asset(
                               imgUrl,
                               fit: BoxFit.fill,
                             ),

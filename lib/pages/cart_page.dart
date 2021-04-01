@@ -10,7 +10,7 @@ class CartPage extends StatelessWidget {
           title: Text('link_fam.'),
           backgroundColor: Colors.pink.shade50
       ),
-      body:Center(child: Image.network('assets/babysleep/babysleep3.jpg'))
+      body:Center(child: Image.asset('assets/babysleep/babysleep3.jpg'))
     );
   }
 }

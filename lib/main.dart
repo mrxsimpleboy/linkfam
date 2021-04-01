@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:practice_carousel/widget/nav-drawer.dart';
 import './pages/index_page.dart';
 import 'dart:io';
 import 'package:flutter/foundation.dart';

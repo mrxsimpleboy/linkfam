@@ -20,8 +20,7 @@ class _HomePageState extends State<HomePage> {
 
   CarouselSlider carouselSlider;
   
-  List imgList = [
-    'assets/momcare1.jpeg',
+  List homeimglist = ['assets/momcare1.jpeg',
     'assets/bottle-feeding1.jpeg',
     'assets/momcare3.jpeg',
     'assets/momcare4.jpeg',
@@ -70,7 +69,7 @@ class _HomePageState extends State<HomePage> {
                     //   });
                     // },
                   ),
-                    items: imgList.map((imgUrl) {
+                    items: homeimglist.map((imgUrl) {
                       return Builder(
                         builder: (BuildContext context) {
                           return Container(
@@ -80,7 +79,7 @@ class _HomePageState extends State<HomePage> {
                               borderRadius: BorderRadius.all(Radius.circular(12)),
                               color: Colors.white,
                             ),
-                            child: Image.network(
+                            child: Image.asset(
                               imgUrl,
                               fit: BoxFit.fill,
                             ),
@@ -95,7 +94,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: map<Widget>(imgList, (index, url) {
+                  children: map<Widget>(homeimglist, (index, url) {
                     return Container(
                       width: 10.0,
                       height: 10.0,
